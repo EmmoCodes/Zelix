@@ -1,0 +1,8 @@
+[[language-servers]]
+name = "go"
+command = "gopls"
+file-types = ["go"]
+
+  [[formatter]]
+  command = "gopls"
+  file-types = ["go"]

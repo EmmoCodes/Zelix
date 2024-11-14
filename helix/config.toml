@@ -1,0 +1,69 @@
+theme = "tokyonight_transparent"
+
+
+# EDITOR -------------
+
+[editor]
+auto-format = true
+auto-save = true
+color-modes = true
+mouse = false
+line-number = "relative"
+   
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+[editor.soft-wrap]
+enable = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+
+[editor.file-picker]
+hidden = false
+
+# CURSOR ------------------
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+# KEYS ------------------
+
+[keys.select]
+  y = [":clipboard-yank", "yank"]
+
+[keys.normal]
+C-c = [
+    ":write-all", 
+    ":new", 
+    ":insert-output lazygit", 
+    ":buffer-close!", 
+    ":redraw", 
+    ":reload-all"
+]
+C-e = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
+H = ":buffer-previous"
+L = ":buffer-next"
+C-q = ":buffer-close"
+C-h = "jump_view_left"
+C-l = "jump_view_right"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-s = ":w"
+S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.normal.space.","]
+b = ":sh helix-wezterm.sh blame"
+c = ":sh helix-wezterm.sh check"
+e = ":sh helix-wezterm.sh explorer"
+f = ":sh helix-wezterm.sh fzf"
+# g = ":sh helix-wezterm.sh lazygit"
+# o = ":sh helix-wezterm.sh open"
+# r = ":sh helix-wezterm.sh run"
