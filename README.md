@@ -19,45 +19,59 @@ Welcome to your next-level coding environment! This setup is designed to be **fa
 
 Install the following dependencies using **Homebrew**:
 
-````zsh
+```zsh
 brew install zellij helix wezterm lazygit yazi sevenzip jq fd ripgrep fzf zoxide
+```
 
 ## 📁 Installation
+
 1. Clone or download this repository.
 
 2. Copy all configuration files to your .config directory:
+
 ```zsh
 cp -r configs/* ~/.config/
+```
 
 3.Install the dependencies (if not already installed) using Homebrew:
+
 ```zsh
 brew install zellij helix wezterm lazygit yazi sevenzip jq fd ripgrep fzf zoxide
+```
 
 🚀 Getting Started
 Launch WezTerm:
+
 ```zsh
 wezterm
+```
 
 Open a Zellij session:
+
 ```zsh
 zellij
+```
 
 Start coding with Helix:
+
 ```zsh
 hx
+```
 
 Use Lazygit for git management:
+
 ```zsh
 Ctrl+c
+```
 
 Navigate files with yazi and fuzzy search with fzf.
 => in Helix Ctrl+e
 
-## 🛡️ Highlights**
+## 🛡️ Highlights
+
 Productivity Enhancements
 Git Integration: Manage repositories seamlessly with Lazygit.
 File Management: Explore files quickly with fd, ripgrep, and fzf.
 Performance
 Rust-Powered Plugins: Optimized for blazing-fast performance.
 GPU Acceleration: Smooth terminal experience with WezTerm.
-````
