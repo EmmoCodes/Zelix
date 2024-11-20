@@ -1,4 +1,4 @@
-# Zelix 🖥️
+# Zelix: A Helix IDE-like experience 🖥️
 
 Welcome to your next-level coding environment! This setup is designed to be **fast**, **responsive**, and optimized for productivity. It combines the power of **Helix** as the code editor, **Zellij** as the terminal multiplexer, and **WezTerm** as the terminal emulator, creating a seamless and efficient development experience.
 
@@ -16,6 +16,8 @@ Welcome to your next-level coding environment! This setup is designed to be **fa
 ---
 
 ## 🛠️ Prerequisites
+
+**Homebrew**
 
 Install the following dependencies using **Homebrew**:
 
@@ -73,7 +75,11 @@ Navigate files with yazi and fuzzy search with fzf.
 **Productivity Enhancements**
 Git Integration: Manage repositories seamlessly with Lazygit.
 File Management: Explore files quickly with fd, ripgrep, and fzf.
+Zellij + WezTerm: Zellij is always launched together with WezTerm, providing a cohesive and visually optimized terminal experience.
 
 **Performance**
 Rust-Powered Plugins: Optimized for blazing-fast performance.
 GPU Acceleration: Smooth terminal experience with WezTerm.
+
+**Visual and Interface Design**
+Minimal Zellij Interface: The Zellij interface is configured to be minimal, offering a clean and distraction-free layout for maximum focus.
