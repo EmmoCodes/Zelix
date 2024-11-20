@@ -61,10 +61,7 @@ hx
 ```
 
 Use Lazygit for git management:
-
-```zsh
-Ctrl+c
-```
+=> in Helix Ctrl+c
 
 Navigate files with yazi and fuzzy search with fzf.
 => in Helix Ctrl+e
