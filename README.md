@@ -23,6 +23,8 @@ Install the following dependencies using **Homebrew**:
 brew install zellij helix wezterm lazygit yazi sevenzip jq fd ripgrep fzf zoxide
 ```
 
+---
+
 ## 📁 Installation
 
 1. Clone or download this repository.
@@ -67,11 +69,14 @@ Ctrl+c
 Navigate files with yazi and fuzzy search with fzf.
 => in Helix Ctrl+e
 
+---
+
 ## 🛡️ Highlights
 
-Productivity Enhancements
+**Productivity Enhancements**
 Git Integration: Manage repositories seamlessly with Lazygit.
 File Management: Explore files quickly with fd, ripgrep, and fzf.
-Performance
+
+**Performance**
 Rust-Powered Plugins: Optimized for blazing-fast performance.
 GPU Acceleration: Smooth terminal experience with WezTerm.
