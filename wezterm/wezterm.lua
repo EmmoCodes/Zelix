@@ -43,6 +43,59 @@ config.keys = {
 	{ key = "1", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
 	{ key = "2", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
 	{ key = "3", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
+	{
+    key = 't',
+    mods = 'CMD',
+    action = act.SendKey {
+      key = 't',
+      mods = 'ALT',
+    },
+  },
+  {
+    key = 'n',
+    mods = 'CMD',
+    action = act.SendKey { key = 'n', mods = 'ALT' },
+  },
+  {
+    key = 'p',
+    mods = 'CMD',
+    action = act.SendKey { key = 'p', mods = 'ALT' },
+  },
+  {
+    key = '`',
+    mods = 'CMD',
+    action = act.SendKey { key = '`', mods = 'ALT' },
+  },
+  {
+    key = 's',
+    mods = 'CMD',
+    action = act.SendKey { key = 's', mods = 'ALT' },
+  },
+  {
+    key = 'x',
+    mods = 'CMD',
+    action = act.SendKey { key = 'x', mods = 'ALT' },
+  },
+  {
+    key = 'l',
+    mods = 'CMD',
+    action = act.SendKey { key = 'l', mods = 'ALT' },
+  },
+  {
+    key = 'k',
+    mods = 'CMD',
+    action = act.SendKey { key = 'k', mods = 'ALT' },
+  },
+  {
+    key = 'j',
+    mods = 'CMD',
+    action = act.SendKey { key = 'j', mods = 'ALT' },
+  },
+  {
+    key = 'h',
+    mods = 'CMD',
+    action = act.SendKey { key = 'h', mods = 'ALT' },
+  }
 	
 }
 -- and finally, return the configuration to wezterm

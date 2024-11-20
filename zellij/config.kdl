@@ -9,36 +9,22 @@ keybinds clear-defaults=true {
         bind "d" { Detach; }
     }
     normal {
-        bind "Ctrl t" { NewTab; SwitchToMode "normal"; }
-        bind "Ctrl h" { MoveFocus "left"; SwitchToMode "normal"; }
-        bind "Ctrl j" { MoveFocus "down"; SwitchToMode "normal"; }
-        bind "Ctrl k" { MoveFocus "up"; SwitchToMode "normal"; }
-        bind "Ctrl l" { MoveFocus "right"; SwitchToMode "normal"; }
-        bind "Ctrl v" { NewPane "down"; SwitchToMode "normal"; }
-        bind "Ctrl s" { NewPane "right"; SwitchToMode "normal"; }
-        bind "Ctrl p" { GoToPreviousTab; SwitchToMode "normal"; }
-        bind "Ctrl n" { GoToNextTab; SwitchToMode "normal"; }
-        bind "Ctrl q" { CloseFocus; }
+        bind "Alt t" { NewTab; SwitchToMode "normal"; }
+        bind "Alt h" { MoveFocus "left"; SwitchToMode "normal"; }
+        bind "Alt j" { MoveFocus "down"; SwitchToMode "normal"; }
+        bind "Alt k" { MoveFocus "up"; SwitchToMode "normal"; }
+        bind "Alt l" { MoveFocus "right"; SwitchToMode "normal"; }
+        bind "Alt x" { NewPane "down"; SwitchToMode "normal"; }
+        bind "Alt s" { NewPane "right"; SwitchToMode "normal"; }
+        bind "Alt p" { GoToPreviousTab; SwitchToMode "normal"; }
+        bind "Alt n" { GoToNextTab; SwitchToMode "normal"; }
+        bind "Alt `" { CloseFocus; }
     }
     tmux {
-        bind "left" { MoveFocus "left"; SwitchToMode "normal"; }
-        bind "down" { MoveFocus "down"; SwitchToMode "normal"; }
-        bind "up" { MoveFocus "up"; SwitchToMode "normal"; }
-        bind "right" { MoveFocus "right"; SwitchToMode "normal"; }
-        bind "space" { NextSwapLayout; }
-        bind "," { SwitchToMode "renametab"; }
-        bind "[" { SwitchToMode "scroll"; }
-        bind "Alt t" { Write 2; SwitchToMode "normal"; }
-        bind "o" { FocusNextPane; }
-        bind "z" { ToggleFocusFullscreen; SwitchToMode "normal"; }
+    
     }
 }
 
-session_serialization false
-pane_viewport_serialization false
-on_force_close "quit"
-disable_session_metadata true
-pane_frames false
 
 plugins {
     // compact-bar location="zellij:compact-bar"
@@ -56,6 +42,11 @@ plugins {
     }
 }
 
+session_serialization false
+pane_viewport_serialization false
+on_force_close "quit"
+disable_session_metadata true
+pane_frames false
 
 // Plugins to load in the background when a new session starts
 // eg. "file:/path/to/my-plugin.wasm"
